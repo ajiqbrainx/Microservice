@@ -1,0 +1,21 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: department
+  namespace: flexcub-testing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: department
+  template:
+    metadata:
+      labels:
+        app: department
+    spec:
+      containers:
+        - name: eureka
+          image: ajiqbrainx/eureka:12
+          ports:
+            - containerPort: 80
+
