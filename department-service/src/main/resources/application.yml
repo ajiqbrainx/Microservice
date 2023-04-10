@@ -22,6 +22,6 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: https://jenkins.flexcub.com/
-  instance:
-    hostname: localhost
+      default-zone: https://jenkins.flexcub.com/
+#  instance:
+#    hostname: localhost
